@@ -14,4 +14,3 @@ function ucFirst(str) {
 
     return newString;
 }
-console.log(ucFirst('super'));

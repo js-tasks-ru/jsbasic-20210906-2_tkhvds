@@ -1,11 +1,11 @@
+const SPAM_WORD_1 = '1xBet';
+const SPAM_WORD_2 = 'XXX';
 function checkSpam(str) {
   let lowStr = str.toLowerCase();
-  let firstSpamWord = '1xBet';
-  let lowOne = firstSpamWord.toLowerCase();
-  let SecondSpamWord = 'XXX';
-  let lowTwo = SecondSpamWord.toLowerCase();
+ 
+  let lowOne = SPAM_WORD_1.toLowerCase();
+  
+  let lowTwo = SPAM_WORD_2.toLowerCase();
+  
   return lowStr.includes(lowOne) || lowStr.includes(lowTwo);
 }
-checkSpam('1XbeT now');
-checkSpam('free xxxxx');
-checkSpam('innocent rabbit');
