@@ -25,7 +25,7 @@ function highlight(table) {
 
   arrayElementsTd.filter(function(item) {
 
-    if (item.hasAttribute('data-available') ){
+    if (item.dataset.available){
         item.parentNode.hidden = false;
     } else {
         item.parentNode.hidden = true;

@@ -4,7 +4,7 @@ function toggleText() {
 
  
   buttonToggle.addEventListener('click', function cluck(){
-    if(text.hasAttribute('hidden')){
+    if(text.hidden){
       text.removeAttribute('hidden');
     } else {
       text.setAttribute('hidden', 'true');
